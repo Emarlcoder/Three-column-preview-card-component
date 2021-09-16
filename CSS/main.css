@@ -21,14 +21,14 @@ body {
 }
 
 /* Principal */
-.principal {
+.main {
     display: flex;
     max-width: 768px;
     min-width: 320px;
 }
 
 /*Columnas*/
-.columna {
+.column {
     color: hsla(0, 0%, 100%, 0.75);
     padding: 2rem;
     width: 25%;
@@ -40,15 +40,15 @@ body {
     align-items: flex-start;
 }
 
-.columna.activa {
+.column.active {
     width: 50%;
 }
 
-.columna:first-of-type {
+.column:first-of-type {
     border-radius: 1rem 0 0 1rem;
 }
 
-.columna:last-of-type {
+.column:last-of-type {
     border-radius: 0 1rem 1rem 0;
 }
 
@@ -64,18 +64,18 @@ body {
     background-color: hsl(179, 100%, 13%);
 }
 
-.titulo {
+.title {
     font-family: 'Big Shoulders Display', cursive;
     text-transform: uppercase;
 }
 
-.texto {
+.text {
     font-size: 15px;
     margin-bottom: 4rem;
     flex-grow: 1;
 }
 
-.enlace {
+.link {
     text-decoration: none;
     background-color: hsl(0, 0%, 95%);
     border-radius: 1rem;
@@ -83,15 +83,15 @@ body {
     font-size: 12px;
 }
 
-.sedans .enlace {
+.sedans .link {
     color: hsl(31, 77%, 52%);
 }
 
-.suvs .enlace {
+.suvs .link {
     color: hsl(184, 100%, 22%);
 }
 
-.luxury .enlace {
+.luxury .link {
     color: hsl(179, 100%, 13%);
 }
 

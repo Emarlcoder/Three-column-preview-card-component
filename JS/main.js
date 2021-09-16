@@ -1,19 +1,19 @@
-//Guardar el estado (columna activa)
-let columnaActiva = 1
+//Guardar el estado (column active)
+let activeColumn = 1
 
-//Seleccionar las columnas
-const columnas = document.querySelectorAll(".columna")
+//Seleccionar las columns
+const columns = document.querySelectorAll(".column")
 
-//Escuchar clicks en columnas
-columnas.forEach((columna, indice)=>{
-    columna.addEventListener("click",function(){
-        cambiarColumnas(indice)
+//Escuchar clicks en columns
+columns.forEach((column, index)=>{
+    column.addEventListener("click",function(){
+        changeColumne(index)
     })
 })
 
-//Cambiar estado de columnas
-function cambiarColumnas(indice) {
-    columnas[columnaActiva].classList.remove("activa")
-    columnas[indice].classList.add("activa")
-    columnaActiva = indice
+//Cambiar estado de columns
+function changeColumne(index) {
+    columns[activeColumn].classList.remove("active")
+    columns[index].classList.add("active")
+    activeColumn = index
 }
